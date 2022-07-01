@@ -1,0 +1,205 @@
+/* total body */
+.body {
+  /* background: rgb(214, 224, 234); */
+  background: #dff4fd;
+}
+
+.card_purchase{
+  height: 500px;
+  width: 350px;
+  box-shadow: 3px 3px 15px #61defd;
+}
+.card_purchase:hover{
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 15px rgb(43, 43, 43) inset;
+}
+.card_puechase_top
+{
+  width: 400px;
+}
+.card_purchase_btm{
+  height: 280px;
+}
+
+/* left menu */
+
+.leftMenuCard {
+  background: rgb(4, 116, 202);
+}
+.leftMenuCard_1 {
+  /*background: rgb(50, 1, 198);*/
+  background: #42c2ff;
+  color: #fff;
+}
+.card_left {
+  position: fixed;
+}
+.listItem {
+  background: rgb(59, 54, 206);
+}
+.Image {
+  height: 90px;
+  width: 90px;
+}
+.Image_smipl {
+  height: 90px;
+}
+.Button_1 {
+  color: #fff;
+  /* background: rgb(4, 116, 202); */
+  background: #000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Button_1:hover {
+  color: rgb(192, 172, 172);
+  /* background: #000; */
+  background: #4c4c6d;
+  border-right: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  /* box-shadow: 3px 3px 5px #dadada; */
+}
+.Button {
+  color: #fff;
+  /* background: rgb(4, 116, 202); */
+  background: #000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Button:hover {
+  color: rgb(192, 172, 172);
+  /* background: rgb(200, 231, 255); */
+  border-right: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  /* box-shadow: 3px 3px 5px #dadada; */
+}
+
+/* main Body */
+
+/* top menu */
+.top_img {
+  right: auto;
+}
+.top_img_display {
+  display: none;
+}
+
+/* main body > top 3 card */
+
+.displayCard_top {
+  height: 300px;
+}
+.displayCard {
+  height: 610px;
+}
+.displayCard_1 {
+  height: 766px;
+}
+.displayCard_2 {
+  height: 350px;
+}
+.displayCard_3 {
+  height: 150px;
+}
+.displayCard_4 {
+  box-shadow: 9px 8px 18px rgb(66, 194, 255);
+}
+.propertyLeft {
+  background: rgb(66, 194, 255);
+}
+.boldText {
+  font-weight: 900;
+}
+.row {
+  --bs-gutter-x: 0rem;
+}
+.SaidMenu {
+  display: block;
+  position: relative;
+  top: 0%;
+  background: #42c2ff;
+  border: 0;
+}
+.SimilarPropertiesQuary {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .SaidMenu {
+    display: none;
+  }
+  .top_img_display {
+    display: block;
+  }
+  .SimilarPropertiesQuary {
+    display: block;
+  }
+  /* .TopMenu{
+        height: 500px;
+    } */
+}
+
+
+  /* home */
+
+  .tobBody{
+    background: url(../Logo/image/Untitled-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+  }
+  .topMidBody{
+    background: url(../Logo/image/Untitled-1.png);
+    background-repeat: no-repeat;
+    height: 110vh;
+  }
+.toptx{
+    color: #024AA2;
+}
+.toptx b{
+    color: #073975;
+}
+.button_front{
+    margin-left: 100px;
+}
+
+.bg-card{
+    margin-left: 30px;
+    margin-top: 140px;
+    box-sizing: border-box;
+    border-right: 8px solid #06E8DE;
+    border-bottom: 8px solid #06E8DE;
+  }
+  .bg-card:hover{
+    border-right: 8px solid #440775;
+    border-bottom: 8px solid #440775;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .optionCard{
+    width: 300px;
+  }
+  .optionCard:hover{
+    box-sizing: border-box;
+    box-shadow: 10px 10px 18px #000;
+  }
+
+  .TopMenu
+{
+    width: 83.1%;
+    position: fixed;
+    box-shadow: 1px 1px 5px rgb(83,83,83);
+    top: 0;
+    right: 0px;
+    z-index: 9999;
+}
+
+.marginTop{
+  margin-top: 7%;
+}
+
+.modal_all{
+  z-index: 99999;
+}
