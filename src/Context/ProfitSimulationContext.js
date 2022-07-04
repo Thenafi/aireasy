@@ -109,7 +109,7 @@ let lodgning;
     property=0;
   }
 
-  if(values. lodgningTax> 0) {
+  if(values.lodgningTax> 0) {
     lodgning= (annualRevenue/100) * values.propertyTax;
   } else{
     lodgning=0;

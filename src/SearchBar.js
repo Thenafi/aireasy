@@ -11,12 +11,13 @@ import "./searchbar.css";
 
 export default function SearchBar() {
   let navigate = useNavigate();
-  const { editViewports , getCity} = useCoordinatesContext();
+  const { editViewports, getCity } = useCoordinatesContext();
   const [address, setAddress] = React.useState("");
   const [coordinates, setCoordinates] = React.useState({
     lat: null,
     lng: null,
   });
+  console.log(coordinates);
   // const [viewport,setViewport]=React.useState({});
 
   const handleSelect = async (value) => {
@@ -25,8 +26,8 @@ export default function SearchBar() {
     setAddress(value);
     setCoordinates(latLng);
     const geo = results[Object.keys(results)[0]];
-    getCity(geo.place_id)
-    console.log(geo)
+    getCity(geo.place_id);
+    console.log(geo);
 
     // setViewport([[geo.geometry.viewport.Ta.h,geo.geometry.viewport.yb.h],[geo.geometry.viewport.Ta.j,geo.geometry.viewport.yb.j]]);
     // <Test outerBounds={viewport}/>;
@@ -72,7 +73,8 @@ export default function SearchBar() {
                   aria-label="Purchase"
                 />
                 <Button
-                  className="m-1 btn btn-dark col-4 ms-4 " style={{ borderRadius: '11px'}}
+                  className="m-1 btn btn-dark col-4 ms-4 "
+                  style={{ borderRadius: "11px" }}
                   onClick={goPurchase}
                 >
                   Purchase

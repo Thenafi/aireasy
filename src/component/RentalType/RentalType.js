@@ -63,13 +63,13 @@ function RentalType() {
                 <CartesianGrid strokeDasharray="3 3" />
                 <Bar dataKey="value" fill="#8884d8">
                   {data.map((entry, index) => {
-                    if (index == 0) {
+                    if (index === 0) {
                       return <Cell fill={"#42C2FF"} />;
                     }
-                    if (index == 1) {
+                    if (index === 1) {
                       return <Cell fill={"#85F4FF"} />;
                     }
-                    if (index == 2) {
+                    if (index === 2) {
                       return <Cell fill={"#B8FFF9"} />;
                     }
                   })}

@@ -1,4 +1,4 @@
-import { Card, Col, Row , Button} from "react-bootstrap";
+import { Card, Col, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import books from "./Logo/image/books.gif";
@@ -8,7 +8,7 @@ import hospital from "./Logo/image/hospital.gif";
 import laptop from "./Logo/image/laptop.gif";
 import presentation from "./Logo/image/presentation.gif";
 import social_media from "./Logo/image/social-media.gif";
-import React from 'react';
+import React from "react";
 
 function StartPage() {
   let navigate = useNavigate();
@@ -17,11 +17,13 @@ function StartPage() {
   }
   return (
     <div className="">
-      
-        <Button onClick={goPurchase} className="btn btn-dark text-right px-5 mx-5 my-5 button_front">
-          Get Started <img src={geology} class="ml-3" alt="" />
-        </Button>
-      
+      <Button
+        onClick={goPurchase}
+        className="btn btn-dark text-right px-5 mx-5 my-5 button_front"
+      >
+        Get Started <img src={geology} class="ml-3" alt="" />
+      </Button>
+
       <Row className="tobBody">
         <Col lg={6}>
           <h1 className="text-justify p-5 my-5 mx-3 toptx">
@@ -117,7 +119,7 @@ function StartPage() {
 
               <a
                 className="btn btn-dark float-right px-5 mx-auto mt-5 button_front"
-                href=""
+                href="https://httpbin.org/status/404"
               >
                 Discover Enterprise Solution{" "}
                 <img src={geology} class="ml-3" alt="" />
@@ -147,7 +149,7 @@ function StartPage() {
 
             <a
               className="btn btn-dark float-right px-5 mx-auto mt-5 button_front"
-              href=""
+              href="https://httpbin.org/status/404"
             >
               View all resources <img src={geology} class="ml-3" alt="" />
             </a>
