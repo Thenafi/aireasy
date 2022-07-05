@@ -99,6 +99,9 @@
 .displayCard_2 {
   height: 350px;
 }
+.displayCard_airbnb {
+  height: 350px;
+}
 .displayCard_3 {
   height: 150px;
 }
@@ -125,21 +128,6 @@
   display: none;
 }
 
-@media only screen and (max-width: 991px) {
-  .SaidMenu {
-    display: none;
-  }
-  .top_img_display {
-    display: block;
-  }
-  .SimilarPropertiesQuary {
-    display: block;
-  }
-  /* .TopMenu{
-        height: 500px;
-    } */
-}
-
 
   /* home */
 
@@ -153,7 +141,6 @@
   .topMidBody{
     background: url(../Logo/image/Untitled-1.png);
     background-repeat: no-repeat;
-    height: 110vh;
   }
 .toptx{
     color: #024AA2;
@@ -193,13 +180,36 @@
     box-shadow: 1px 1px 5px rgb(83,83,83);
     top: 0;
     right: 0px;
-    z-index: 9999;
+    z-index: 999;
+}
+.modal_all{
+  z-index: 99999;
 }
 
 .marginTop{
   margin-top: 7%;
 }
 
-.modal_all{
-  z-index: 99999;
+@media only screen and (max-width: 1024px) {
+  .SaidMenu {
+    display: none;
+  }
+  .top_img_display {
+    display: block;
+  }
+  .SimilarPropertiesQuary {
+    display: block;
+  }
+  .bg-card{
+    margin-top: 0px;
+  }
+  .topMidBody{
+    background: rgb(206, 206, 206);
+  }
+  .displayCard_airbnb{
+    height: 550px;
+  }
+  .TopMenu{
+    width: 100%;
+  }
 }
