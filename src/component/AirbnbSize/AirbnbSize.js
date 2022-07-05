@@ -65,7 +65,7 @@ function AirbnbSize() {
   return (
     <>
       <Col lg={12}>
-        <Card border="light" className="m-1 rounded displayCard_2">
+        <Card border="light" className="m-1 rounded displayCard_airbnb">
           <Card.Body>
             <Card.Title>Airbnb Size</Card.Title>
             <Row>
