@@ -1,4 +1,4 @@
-import { Card, Col, Row, Button } from "react-bootstrap";
+import { Card, Col, Row , Button} from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import books from "./Logo/image/books.gif";
@@ -8,7 +8,7 @@ import hospital from "./Logo/image/hospital.gif";
 import laptop from "./Logo/image/laptop.gif";
 import presentation from "./Logo/image/presentation.gif";
 import social_media from "./Logo/image/social-media.gif";
-import React from "react";
+import React from 'react';
 
 function StartPage() {
   let navigate = useNavigate();
@@ -17,20 +17,18 @@ function StartPage() {
   }
   return (
     <div className="">
-      <Button
-        onClick={goPurchase}
-        className="btn btn-dark text-right px-5 mx-5 my-5 button_front"
-      >
-        Get Started <img src={geology} class="ml-3" alt="" />
-      </Button>
-
+      
+        <Button onClick={goPurchase} className="btn btn-dark text-right px-5 mx-5 my-5 button_front">
+          Get Started <img src={geology} class="ml-3" alt="" />
+        </Button>
+      
       <Row className="tobBody">
         <Col lg={6}>
-          <h1 className="text-justify p-5 my-5 mx-3 toptx">
+          <h1 className="text-justify p-xl-5 p-3 my-2 my-xl-5 mx-3 toptx">
             <b>Vacation Rental Data</b> to Set You Apart. Insights to Keep You
             Ahead.
           </h1>
-          <h3 className="text-justify p-5  text-muted">
+          <h3 className="text-justify p-xl-5 p-3 text-muted">
             Aireasy will be the next generation of real-time analytics which
             will provide a one-stop solution in the property management
             industry.
@@ -38,26 +36,26 @@ function StartPage() {
         </Col>
       </Row>
       <div className="topMidBody">
-        <Col className="p-5">
+        <Col className="p-md-5">
           <Row>
-            <Col md={5} className="my-5 ms-5 p-5 me-1">
-              <p className="text-dark h1  ps-5 ms-5 mt-5 pt-5">
+            <Col xl={6} className="my-xl-5 ms-5 p-5 me-1">
+              <p className="text-dark h1  ps-xl-5 ms-xl-5 mt-2 pt-2 mt-xl-5 pt-xl-5">
                 Smart decisions start with better intelligence.
               </p>
-              <p className="text-muted p-2 ps-5 ms-5 h6">
+              <p className="text-muted p-2 ps-xl-5 ms-5 h6">
                 Powered by over 10 million global properties on Airbnb and Vrbo
                 in 120,000 global markets, MarketMinder is the #1 leading
                 platform for short-term rental intelligence.
               </p>
-              <p className="text-muted p-2 ps-5 ms-5 h6">
+              <p className="text-muted p-2 ps-xl-5 ms-5 h6">
                 Use MarketMinder to discover where to invest, set the perfect
                 price every day, and stay two steps ahead of the competition.
               </p>
             </Col>
-            <Col md={6} className="">
+            <Col xl={5} className=" pb-3">
               <img
                 src={laptop}
-                class="w-75 d-block mx-auto bg-card rounded-circle"
+                class="w-50 d-block mx-auto bg-card rounded-circle img_margin img-fluid"
                 alt=""
               />
             </Col>
@@ -119,7 +117,7 @@ function StartPage() {
 
               <a
                 className="btn btn-dark float-right px-5 mx-auto mt-5 button_front"
-                href="https://httpbin.org/status/404"
+                href=""
               >
                 Discover Enterprise Solution{" "}
                 <img src={geology} class="ml-3" alt="" />
@@ -149,7 +147,7 @@ function StartPage() {
 
             <a
               className="btn btn-dark float-right px-5 mx-auto mt-5 button_front"
-              href="https://httpbin.org/status/404"
+              href=""
             >
               View all resources <img src={geology} class="ml-3" alt="" />
             </a>
