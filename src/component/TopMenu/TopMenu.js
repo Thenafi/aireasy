@@ -29,7 +29,7 @@ export default function TopMenu() {
 
                 <Nav.Link className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>View Unlocked Market</Nav.Link>
                 
-                <Button onClick={goPurchase} className="m-1 p-2 btn btn-dark">Similar Properties</Button>
+                <Button onClick={goPurchase} className="m-1 p-2 btn btn-dark">Similar Property</Button>
                 <hr className="w-100 SimilarPropertiesQuary" />
                 {/* <Nav.Link className="m-1 p-2 Button_1 SimilarPropertiesQuary" style={{color: '#fff'}}>Overview</Nav.Link>
           
