@@ -23,7 +23,7 @@ export default function TopMenu() {
             <SearchBar lg={4}/>
 
                 <Nav.Link className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>View Unlocked Market</Nav.Link>
-                <Nav.Link href='https://aireasy.netlify.app/similarproperties' className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>Similar Properties</Nav.Link>
+                <Nav.Link href='similarproperties' className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>Similar Properties</Nav.Link>
 
                 <hr className="w-100 SimilarPropertiesQuary" />
                 {/* <Nav.Link className="m-1 p-2 Button_1 SimilarPropertiesQuary" style={{color: '#fff'}}>Overview</Nav.Link>
