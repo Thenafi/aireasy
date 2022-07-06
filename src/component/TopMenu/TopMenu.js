@@ -15,7 +15,7 @@ export default function TopMenu() {
   const { currentUser, life} = useAuth();
   let navigate = useNavigate();
   function goPurchase() {
-    navigate("/similarproperties");
+    navigate("/SimilarProperty");
   }
   return (
     <>
