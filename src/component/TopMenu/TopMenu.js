@@ -7,11 +7,16 @@ import Login from '../Authentication/Login';
 import Signup from '../Authentication/Signup';
 import UserName from '../Authentication/UserName';
 import Filter from './Filter';
+import { useNavigate } from "react-router-dom";
 
 
 export default function TopMenu() {
   // const [mark, setMark] = useState(false)
   const { currentUser, life} = useAuth();
+  let navigate = useNavigate();
+  function goPurchase() {
+    navigate("/similarproperties");
+  }
   return (
     <>
       <Col lg={12}>
@@ -23,8 +28,8 @@ export default function TopMenu() {
             <SearchBar lg={4}/>
 
                 <Nav.Link className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>View Unlocked Market</Nav.Link>
-                <Nav.Link href='/SimilerProperties' className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>Similar Properties</Nav.Link>
-
+                
+                <Button onClick={goPurchase} className="m-1 p-2 btn btn-dark">Similar Properties</Button>
                 <hr className="w-100 SimilarPropertiesQuary" />
                 {/* <Nav.Link className="m-1 p-2 Button_1 SimilarPropertiesQuary" style={{color: '#fff'}}>Overview</Nav.Link>
           
