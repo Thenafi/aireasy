@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Col, Container, Nav, Navbar } from 'react-bootstrap';
+import { Col, Container, Nav, Navbar, Button } from 'react-bootstrap';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { useAuth } from '../../Context/AuthContext';
 import SearchBar from '../../SearchBar';
@@ -27,9 +27,10 @@ export default function TopMenu() {
             <Navbar.Collapse > 
             <SearchBar lg={4}/>
 
-                <Nav.Link className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}>View Unlocked Market</Nav.Link>
-                
-                <Button onClick={goPurchase} className="m-1 p-2 btn btn-dark">Similar Property</Button>
+                <Nav.Link className="m-1 p-2 btn btn-dark" style={{color: '#fff' , borderRadius: '15px'}}>View Unlocked Market</Nav.Link>
+                <Button onClick={goPurchase} className="m-1 p-2 btn btn-dark">Similar Properties</Button>
+                {/* <Nav.Link href='similarproperties' className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}></Nav.Link> */}
+
                 <hr className="w-100 SimilarPropertiesQuary" />
                 {/* <Nav.Link className="m-1 p-2 Button_1 SimilarPropertiesQuary" style={{color: '#fff'}}>Overview</Nav.Link>
           
