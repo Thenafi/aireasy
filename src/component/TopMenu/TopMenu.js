@@ -14,7 +14,7 @@ export default function TopMenu() {
   // const [mark, setMark] = useState(false)
   const { currentUser, life} = useAuth();
   let navigate = useNavigate();
-  function goPurchase() {
+  function goPu() {
     navigate("/SimilarProperty");
   }
   return (
@@ -28,7 +28,7 @@ export default function TopMenu() {
             <SearchBar lg={4}/>
 
                 <Nav.Link className="m-1 p-2 btn btn-dark" style={{color: '#fff' , borderRadius: '15px'}}>View Unlocked Market</Nav.Link>
-                <Button onClick={goPurchase} className="m-1 p-2 btn btn-dark">Similar Properties</Button>
+                <Button onClick={goPu} className="m-1 p-2 btn btn-dark">Similar Properties</Button>
                 {/* <Nav.Link href='similarproperties' className="m-1 p-2 Button_1 Button_1" style={{color: '#fff' , borderRadius: '15px'}}></Nav.Link> */}
 
                 <hr className="w-100 SimilarPropertiesQuary" />
