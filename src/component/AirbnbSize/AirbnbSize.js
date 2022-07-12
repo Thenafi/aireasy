@@ -1,5 +1,5 @@
 import axios from "axios";
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import {
   Legend,
@@ -20,13 +20,15 @@ function AirbnbSize() {
   const [upFour, setUpFour] = useState(null);
 
   const url = "https://aireasymockapi.herokuapp.com/static";
-  const url1 = "https://aireasymockapi.herokuapp.com/api_v2";
+  const url1 = "https://aireasymockapi.herokuapp.com/api_final";
 
   const fetchData = async () => {
     try {
       if (city === "out") {
-        const response = await axios.post(url1, { len: 30 });
-        const dataa = response.data.rechart_friendly.review_ls;
+        const response = await axios.post(url1, {
+          len: Math.trunc(Math.random() * 300) + 1,
+        });
+        const dataa = response.data.review_ls;
         const val = dataa[1].value;
         const value = Math.floor(val);
         setUpFour(value);
@@ -50,8 +52,8 @@ function AirbnbSize() {
         const ran = Number.parseFloat(vale).toFixed(2);
         SetAvgrating(ran);
 
-        let overall =Math.floor(Math.random() * (98- 88 + 1) + 88)
-         setUpFour(overall);
+        let overall = Math.floor(Math.random() * (98 - 88 + 1) + 88);
+        setUpFour(overall);
       }
     } catch (e) {
       console.log(e.response);

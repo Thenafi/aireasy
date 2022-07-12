@@ -1,5 +1,5 @@
 import axios from "axios";
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Col } from "react-bootstrap";
 import {
   Bar,
@@ -19,19 +19,21 @@ function RentalType() {
   const { city } = useCoordinatesContext();
 
   const url = "https://aireasymockapi.herokuapp.com/static";
-  const url1 = "https://aireasymockapi.herokuapp.com/api_v2";
+  const url1 = "https://aireasymockapi.herokuapp.com/api_final";
 
   const fetchData = async () => {
     try {
       if (city === "out") {
-        const response = await axios.post(url1, { len: 30 });
-        const data = response.data.rechart_friendly.type_of_room_ls;
+        const response = await axios.post(url1, {
+          len: Math.trunc(Math.random() * 300) + 1,
+        });
+        const data = response.data.type_of_room_ls;
         setData(data);
       } else {
-        const response = await axios.post(url, {area : city});
-        const data=response.data.type_of_room_ls;
+        const response = await axios.post(url, { area: city });
+        const data = response.data.type_of_room_ls;
         setData(data);
-        console.log(data)
+        console.log(data);
       }
     } catch (e) {
       console.log(e.response);
@@ -56,7 +58,7 @@ function RentalType() {
                 layout="vertical"
                 barSize={16}
               >
-                <XAxis type="number" domain={[0, 'dataMax + 20']}/>
+                <XAxis type="number" domain={[0, "dataMax + 20"]} />
                 <YAxis type="category" dataKey="name" />
                 <Tooltip cursor={{ fill: "transparent" }} />
                 <Legend />

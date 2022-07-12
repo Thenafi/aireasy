@@ -13,15 +13,16 @@ function AverageDailyRate() {
   const { avgDailyCal } = useSimulationContext();
 
   const url = "https://aireasymockapi.herokuapp.com/static";
-  const url1 = "https://aireasymockapi.herokuapp.com/api_v2";
+  const url1 = "https://aireasymockapi.herokuapp.com/api_final";
 
   const fetchData = async () => {
     try {
       if (city === "out") {
-        const response = await axios.post(url1, { len: 30 });
-        // const data=response.data.rechart_friendly.month_data_prc_ls;
-        const data = response.data.rechart_friendly.month_data_prc_ls;
-        console.log(data);
+        const response = await axios.post(url1, {
+          len: Math.trunc(Math.random() * 300) + 1,
+        });
+        const data = response.data.month_data_prc_ls;
+        console.log(response);
         setData(data);
         const value = response.data.calculated.month_data_prc;
         const avgData = Math.ceil(
@@ -64,7 +65,7 @@ function AverageDailyRate() {
       }
     } catch (e) {
       console.log("ki error hosse bujlam nah vai");
-      console.log(e.response.data);
+      console.log(e);
     }
   };
 

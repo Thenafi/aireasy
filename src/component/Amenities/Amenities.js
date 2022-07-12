@@ -18,20 +18,21 @@ function Amenities() {
   const { city } = useCoordinatesContext();
 
   const url = "https://aireasymockapi.herokuapp.com/static";
-  const url1 = "https://aireasymockapi.herokuapp.com/api_v2";
+  const url1 = "https://aireasymockapi.herokuapp.com/api_final";
 
   const fetchData = async () => {
     try {
       if (city === "out") {
-        const response = await axios.post(url1, { len: 30 });
-        const data = response.data.rechart_friendly.amentities_ls;
+        const response = await axios.post(url1, {
+          len: Math.trunc(Math.random() * 300) + 1,
+        });
+        const data = response.data.amentities_ls;
         console.log(data);
         setData(data);
       } else {
         const response = await axios.post(url, { area: city });
         const data = response.data.amentities_ls;
         setData(data);
-      
       }
     } catch (e) {
       console.log(e.response);
@@ -55,7 +56,7 @@ function Amenities() {
                 barSize={7}
                 style={{ marginLeft: "6px" }}
               >
-                <XAxis type="number" domain={[0, 100]}   />
+                <XAxis type="number" domain={[0, 100]} />
                 <YAxis type="category" interval={0} dataKey="name" />
                 <Tooltip cursor={{ fill: "transparent" }} />
                 <Bar dataKey="value" fill="#42C2FF" />
