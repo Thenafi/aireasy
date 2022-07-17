@@ -1,1 +1,3 @@
-# aireasy_react
+# Air Easy
+
+Made using React
