@@ -45,36 +45,6 @@
 .Image_smipl {
   height: 90px;
 }
-.Button_1 {
-  color: #fff;
-  /* background: rgb(4, 116, 202); */
-  background: #000;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-.Button_1:hover {
-  color: rgb(192, 172, 172);
-  /* background: #000; */
-  background: #4c4c6d;
-  border-right: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  /* box-shadow: 3px 3px 5px #dadada; */
-}
-.Button {
-  color: #fff;
-  /* background: rgb(4, 116, 202); */
-  background: #000;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-.Button:hover {
-  color: rgb(192, 172, 172);
-  /* background: rgb(200, 231, 255); */
-  border-right: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  /* box-shadow: 3px 3px 5px #dadada; */
-}
-
 /* main Body */
 
 /* top menu */
