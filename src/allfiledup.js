@@ -119,7 +119,7 @@ function AllFile() {
                               </Button>
 
                               <hr variant="primary" className="bg-primary w-75 mx-auto" />
-                              <p className="text-center">I have an account <a href="#" onClick={()=> setClicklogin(true)} className="text-primary">Log In</a></p>
+                              <p className="text-center">I have an account <button onClick={()=> setClicklogin(true)} className="text-primary">Log In</button></p>
 
                             </Form>
                           </Modal.Body>
@@ -168,7 +168,7 @@ function AllFile() {
                               </Button>
 
                               <hr variant="primary" className="bg-primary w-75 mx-auto" />
-                              <p className="text-center">I don't have an account <a href="#" onClick={()=> setClick(true)} className="text-primary">Sign Up</a></p>
+                              <p className="text-center">I don't have an account <button onClick={()=> setClick(true)} className="text-primary">Sign Up</button></p>
 
                             </Form>
                           </Modal.Body>
