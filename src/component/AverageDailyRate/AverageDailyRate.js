@@ -22,21 +22,23 @@ function AverageDailyRate() {
           len: Math.trunc(Math.random() * 300) + 1,
         });
         const data = response.data.month_data_prc_ls;
-        console.log(response);
         setData(data);
-        const value = response.data.calculated.month_data_prc;
+        // console.log(data);
+        // const value = response.data.month_data_prc_ls;
+
         const avgData = Math.ceil(
-          (value.apr_prc +
-            value.aug_prc +
-            value.dec_prc +
-            value.jan_prc +
-            value.jul_prc +
-            value.jun_prc +
-            value.mar_prc +
-            value.may_prc +
-            value.nov_prc +
-            value.oct_prc +
-            value.sep_prc) /
+          (data[0].value +
+            data[1].value +
+            data[2].value +
+            data[3].value +
+            data[4].value +
+            data[5].value +
+            data[6].value +
+            data[7].value +
+            data[8].value +
+            data[9].value +
+            data[10].value +
+            data[11].value) /
             24
         );
         setAvgDailyRate(avgData);

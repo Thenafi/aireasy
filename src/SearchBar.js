@@ -31,14 +31,14 @@ export default function SearchBar() {
 
     // setViewport([[geo.geometry.viewport.Ta.h,geo.geometry.viewport.yb.h],[geo.geometry.viewport.Ta.j,geo.geometry.viewport.yb.j]]);
     // <Test outerBounds={viewport}/>;
-    // const  c =geo.geometry.viewport.Ra.hi;
-    // const d =geo.geometry.viewport.Ra.lo;
-    // const a =geo.geometry.viewport.ub.hi;
-    // const  b=geo.geometry.viewport.ub.lo;
-    const c = geo.geometry.viewport.Ra.hi;
-    const d = geo.geometry.viewport.Ra.lo;
-    const a = geo.geometry.viewport.wb.hi;
-    const b = geo.geometry.viewport.wb.lo;
+    const  c =geo.geometry.viewport.Ra.hi;
+    const d =geo.geometry.viewport.Ra.lo;
+    const a =geo.geometry.viewport.vb.hi;
+    const  b=geo.geometry.viewport.vb.lo;
+    // const c = geo.geometry.viewport.vb.hi;
+    // const d = geo.geometry.viewport.vb.lo;
+    // const a = geo.geometry.viewport.Ra.hi;
+    // const b = geo.geometry.viewport.Ra.lo;
     // console.log(`value of a b c d
     //      ${a}  ${b} ${c} ${d}`);
     editViewports(a, b, c, d);
