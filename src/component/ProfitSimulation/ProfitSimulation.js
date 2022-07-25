@@ -84,14 +84,13 @@ function ProfitSimulation() {
                 </Col>
 
                 <Col md={6}>
-                  <a
-                    href="https://httpbin.org/status/404"
+                  <button
                     onClick={() => setClick(true)}
                     className="p-2 btn btn-dark mt-3"
                     style={{ color: "#fff" }}
                   >
                     Edit Details
-                  </a>
+                  </button>
                 </Col>
               </Row>
               <Row>
