@@ -33,7 +33,6 @@ import '../firebase';
         setCurrentUser(user);
         setLoading(false);
       });
-  
       return unsubscribe;
     }, []);
   

@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { Legend, Line, LineChart, Tooltip, XAxis } from "recharts";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { useSimulationContext } from "../../Context/ProfitSimulationContext";
 import { useCoordinatesContext } from "../../Context/MapRelatedContext";
+import { useSimulationContext } from "../../Context/ProfitSimulationContext";
 
 function OccupancyRate() {
   const [data, setData] = useState("");
@@ -21,29 +21,32 @@ function OccupancyRate() {
         const response = await axios.post(url1, {
           len: Math.trunc(Math.random() * 300) + 1,
         });
+        console.log("city is out now");
         const data = response.data.month_data_ocu_ls;
         setData(data);
-        console.log(response.data);
-        const value = response.data.calculated.month_data_ocu;
+
         const occData = Math.ceil(
-          (value.apr_ocu +
-            value.aug_ocu +
-            value.dec_ocu +
-            value.jan_ocu +
-            value.jul_ocu +
-            value.jun_ocu +
-            value.mar_ocu +
-            value.may_ocu +
-            value.nov_ocu +
-            value.oct_ocu +
-            value.sep_ocu) /
+          (data[0].value +
+            data[1].value +
+            data[2].value +
+            data[3].value +
+            data[4].value +
+            data[5].value +
+            data[6].value +
+            data[7].value +
+            data[8].value +
+            data[9].value +
+            data[10].value +
+            data[11].value) /
             12
+            
         );
         setOccupnacy(occData);
         const oc = Number((occData / 100) * 30);
         occuCal(oc);
       } else {
         const response = await axios.post(url, { area: city });
+        console.log("now inside of city list");
         const data = response.data.month_data_ocu_ls;
         setData(data);
         if (city === "Rome") {
