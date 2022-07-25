@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
   <Nav.Link
     href="#"
     onClick={() => setClick(true)}
-    className="m-1 p-2 Button_1"
+    className="m-1 p-2 btn btn-dark"
     style={{ color: "#fff" }}
   >
     Sign Up
@@ -102,7 +102,7 @@ import { Button } from "react-bootstrap";
   <Nav.Link
     href="#"
     onClick={() => setClicklogin(true)}
-    className="m-1 p-2 Button_1"
+    className="m-1 p-2 btn btn-dark"
     style={{ color: "#fff" }}
   >
     Log In
@@ -178,7 +178,7 @@ import { Button } from "react-bootstrap";
   <Nav.Link
     href="#"
     onClick={() => setClickFilter(true)}
-    className="m-1 p-2 Button_1"
+    className="m-1 p-2 btn btn-dark"
     style={{ color: "#fff" }}
   >
     Filter

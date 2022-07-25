@@ -138,7 +138,7 @@ export default function login() {
       <Nav.Link
         href="#"
         onClick={() => setClicklogin(true)}
-        className="m-1 p-2 Button_1"
+        className="m-1 p-2 btn btn-dark"
         style={{ color: "#fff" }}
       >
         Log In

@@ -56,12 +56,12 @@ function AllFile() {
                       <hr className="w-100 SimilarPropertiesQuary" />
                     
                
-                      <Nav.Link className="m-1 p-2 Button_1 SimilarPropertiesQuary" style={{color: '#fff'}}>Overview</Nav.Link>
+                      <Nav.Link className="m-1 p-2 btn btn-dark SimilarPropertiesQuary" style={{color: '#fff'}}>Overview</Nav.Link>
                  
 
 
              
-                      <Nav.Link className="m-1 p-2 Button_1 SimilarPropertiesQuary"  style={{color: '#fff'}}>Similar Properties</Nav.Link>
+                      <Nav.Link className="m-1 p-2 btn btn-dark SimilarPropertiesQuary"  style={{color: '#fff'}}>Similar Properties</Nav.Link>
                 
                       
                       <hr className="w-100 SimilarPropertiesQuary" />

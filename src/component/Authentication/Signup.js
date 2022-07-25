@@ -167,7 +167,7 @@ function Signup() {
            </Modal.Body>
              </Modal> 
 }
-                 <Nav.Link href="#" onClick={()=> setClick(true)} className="m-1 p-2 Button_1" style={{color: '#fff'}}>Sign Up</Nav.Link>
+                 <Nav.Link href="#" onClick={()=> setClick(true)} className="m-1 p-2 btn btn-dark" style={{color: '#fff'}}>Sign Up</Nav.Link>
        
                <Modal show={click} className="modal_all">
 
